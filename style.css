@@ -1,4 +1,4 @@
-/* Fundo animado com gradiente suave */
+/* Fundo gradiente suave */
 body {
     margin: 0;
     height: 100vh;
@@ -9,7 +9,7 @@ body {
     background: linear-gradient(135deg, #1a1a2e, #162447, #1f4068, #e43f5a);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
-    color: #ffffff; /* cor padrão */
+    color: #ffffff;
 }
 
 @keyframes gradientBG {
@@ -23,14 +23,14 @@ body {
     text-align: center;
 }
 
-/* Título futurista clean */
+/* Título simples */
 h1 {
     font-size: 3em;
     margin-bottom: 30px;
     color: #ffcc00;
 }
 
-/* Relógio clean e colorido */
+/* Relógio clean */
 #clock {
     font-size: 6em;
     letter-spacing: 10px;
