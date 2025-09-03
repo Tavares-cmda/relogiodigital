@@ -1,20 +1,13 @@
 function atualizarRelogio() {
     const agora = new Date();
-    let horas = agora.getHours();
-    let minutos = agora.getMinutes();
-    let segundos = agora.getSeconds();
+    let horas = agora.getHours().toString().padStart(2, '0');
+    let minutos = agora.getMinutes().toString().padStart(2, '0');
+    let segundos = agora.getSeconds().toString().padStart(2, '0');
 
-    // Adicionar zero à esquerda
-    horas = horas < 10 ? '0' + horas : horas;
-    minutos = minutos < 10 ? '0' + minutos : minutos;
-    segundos = segundos < 10 ? '0' + segundos : segundos;
-
-    const tempo = `${horas}:${minutos}:${segundos}`;
-    document.getElementById('relogio').textContent = tempo;
+    const horaAtual = `${horas}:${minutos}:${segundos}`;
+    document.getElementById('clock').textContent = horaAtual;
 }
 
-// Atualiza a cada 1 segundo
-setInterval(atualizarRelogio, 1000);
-
-// Inicializa imediatamente
+// Inicializa o relógio imediatamente e atualiza a cada segundo
 atualizarRelogio();
+setInterval(atualizarRelogio, 1000);
