@@ -1,4 +1,4 @@
-/* Fundo animado multicolorido */
+/* Fundo animado com gradiente suave */
 body {
     margin: 0;
     height: 100vh;
@@ -6,10 +6,10 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(-45deg, #1a1a2e, #162447, #1f4068, #e43f5a);
+    background: linear-gradient(135deg, #1a1a2e, #162447, #1f4068, #e43f5a);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
-    color: #fffc00; /* cor padrão para contraste */
+    color: #ffffff; /* cor padrão */
 }
 
 @keyframes gradientBG {
@@ -23,20 +23,37 @@ body {
     text-align: center;
 }
 
-/* Título neon multicolor */
+/* Título futurista clean */
 h1 {
     font-size: 3em;
     margin-bottom: 30px;
-    color: #ff00ff;
-    text-shadow:
-        0 0 10px #ff00ff,
-        0 0 20px #00ffff,
-        0 0 40px #ffff00,
-        0 0 60px #ff8000;
+    color: #ffcc00;
 }
 
-/* Relógio LED multicolor */
+/* Relógio clean e colorido */
 #clock {
     font-size: 6em;
     letter-spacing: 10px;
-    padding:
+    padding: 50px 100px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #00ccff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover simples */
+#clock:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+    #clock {
+        font-size: 4em;
+        padding: 30px 60px;
+        letter-spacing: 5px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
