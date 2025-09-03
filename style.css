@@ -1,4 +1,4 @@
-/* Fundo gradiente verde */
+/* Fundo verde escuro */
 body {
     margin: 0;
     height: 100vh;
@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #0b1e0b, #123012, #1f4020, #205020);
+    background: linear-gradient(135deg, #0a1a0a, #0f2a0f, #154015, #1a501a);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     color: #a0ff8f; /* cor padrão verde */
@@ -23,14 +23,14 @@ body {
     text-align: center;
 }
 
-/* Título verde */
+/* Título verde claro */
 h1 {
     font-size: 3em;
     margin-bottom: 30px;
     color: #7fff7f;
 }
 
-/* Relógio verde clean */
+/* Relógio verde vibrante */
 #clock {
     font-size: 6em;
     letter-spacing: 10px;
