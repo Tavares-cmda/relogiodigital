@@ -1,4 +1,4 @@
-/* Fundo animado neon com cores mais vivas */
+/* Fundo animado multicolorido */
 body {
     margin: 0;
     height: 100vh;
@@ -6,16 +6,16 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(-45deg, #0f1f0f, #003300, #004d4d, #001100);
+    background: linear-gradient(-45deg, #1a1a2e, #162447, #1f4068, #e43f5a);
     background-size: 400% 400%;
-    animation: gradientBG 12s ease infinite;
-    color: #00ff99;
+    animation: gradientBG 15s ease infinite;
+    color: #fffc00; /* cor padrão para contraste */
 }
 
 @keyframes gradientBG {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* Container centralizado */
@@ -23,62 +23,20 @@ body {
     text-align: center;
 }
 
-/* Título futurista com neon mais vibrante */
+/* Título neon multicolor */
 h1 {
     font-size: 3em;
     margin-bottom: 30px;
-    color: #00ffe0;
-    text-shadow: 
-        0 0 10px #00ffe0, 
-        0 0 20px #00ffe0, 
-        0 0 40px #00ff99,
-        0 0 60px #00ff66;
+    color: #ff00ff;
+    text-shadow:
+        0 0 10px #ff00ff,
+        0 0 20px #00ffff,
+        0 0 40px #ffff00,
+        0 0 60px #ff8000;
 }
 
-/* Relógio LED futurista com cores vibrantes */
+/* Relógio LED multicolor */
 #clock {
     font-size: 6em;
     letter-spacing: 10px;
-    padding: 50px 100px;
-    border-radius: 30px;
-    background-color: rgba(0, 60, 20, 0.6);
-    color: #00ff99;
-    text-shadow: 
-        0 0 5px #00ff99,
-        0 0 15px #00ffe0,
-        0 0 30px #00ff66,
-        0 0 50px #00ffcc;
-    box-shadow: 
-        0 0 30px #00ff99,
-        0 0 60px #00ffe0,
-        0 0 90px #00ff66;
-    animation: blink 1s infinite alternate;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Hover aumenta o efeito neon */
-#clock:hover {
-    box-shadow: 
-        0 0 50px #00ff99,
-        0 0 100px #00ffe0,
-        0 0 150px #00ff66;
-}
-
-/* Piscar suave estilo LED */
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0.85; }
-    100% { opacity: 1; }
-}
-
-/* Responsivo para telas menores */
-@media screen and (max-width: 768px) {
-    #clock {
-        font-size: 4em;
-        padding: 30px 60px;
-        letter-spacing: 5px;
-    }
-    h1 {
-        font-size: 2em;
-    }
-}
+    padding:
