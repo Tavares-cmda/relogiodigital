@@ -4,7 +4,8 @@ function atualizarRelogio() {
     const minutos = String(agora.getMinutes()).padStart(2, '0');
     const segundos = String(agora.getSeconds()).padStart(2, '0');
 
-    document.getElementById('clock').textContent = `${horas}:${minutos}:${segundos}`;
+    const horaAtual = `${horas}:${minutos}:${segundos}`;
+    document.getElementById('clock').textContent = horaAtual;
 }
 
 // Atualiza imediatamente e depois a cada segundo
