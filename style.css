@@ -1,4 +1,4 @@
-/* Fundo gradiente suave */
+/* Fundo gradiente verde */
 body {
     margin: 0;
     height: 100vh;
@@ -6,10 +6,10 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #1a1a2e, #162447, #1f4068, #e43f5a);
+    background: linear-gradient(135deg, #0b1e0b, #123012, #1f4020, #205020);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
-    color: #ffffff;
+    color: #a0ff8f; /* cor padrão verde */
 }
 
 @keyframes gradientBG {
@@ -23,27 +23,27 @@ body {
     text-align: center;
 }
 
-/* Título simples */
+/* Título verde */
 h1 {
     font-size: 3em;
     margin-bottom: 30px;
-    color: #ffcc00;
+    color: #7fff7f;
 }
 
-/* Relógio clean */
+/* Relógio verde clean */
 #clock {
     font-size: 6em;
     letter-spacing: 10px;
     padding: 50px 100px;
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #00ccff;
+    background-color: rgba(0, 40, 0, 0.6);
+    color: #00ff00;
     transition: all 0.3s ease-in-out;
 }
 
 /* Hover simples */
 #clock:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 60, 0, 0.8);
 }
 
 /* Responsivo */
