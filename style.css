@@ -1,4 +1,4 @@
-/* Fundo animado neon */
+/* Fundo animado neon com cores mais vivas */
 body {
     margin: 0;
     height: 100vh;
@@ -6,10 +6,10 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(-45deg, #0b1e0b, #042104, #004400, #001100);
+    background: linear-gradient(-45deg, #0f1f0f, #003300, #004d4d, #001100);
     background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    color: #00ff00;
+    animation: gradientBG 12s ease infinite;
+    color: #00ff99;
 }
 
 @keyframes gradientBG {
@@ -23,31 +23,45 @@ body {
     text-align: center;
 }
 
-/* Título futurista com neon */
+/* Título futurista com neon mais vibrante */
 h1 {
     font-size: 3em;
     margin-bottom: 30px;
-    color: #00ff7f;
-    text-shadow: 0 0 10px #00ff7f, 0 0 20px #00ff7f, 0 0 40px #00ff7f;
+    color: #00ffe0;
+    text-shadow: 
+        0 0 10px #00ffe0, 
+        0 0 20px #00ffe0, 
+        0 0 40px #00ff99,
+        0 0 60px #00ff66;
 }
 
-/* Relógio LED futurista */
+/* Relógio LED futurista com cores vibrantes */
 #clock {
     font-size: 6em;
     letter-spacing: 10px;
     padding: 50px 100px;
     border-radius: 30px;
-    background-color: rgba(0, 50, 0, 0.6);
-    color: #00ff00;
-    text-shadow: 0 0 5px #00ff00, 0 0 15px #00ff7f, 0 0 30px #00ff7f, 0 0 50px #00ff7f;
-    box-shadow: 0 0 30px #00ff00, 0 0 60px #00ff7f, 0 0 90px #00ff7f;
+    background-color: rgba(0, 60, 20, 0.6);
+    color: #00ff99;
+    text-shadow: 
+        0 0 5px #00ff99,
+        0 0 15px #00ffe0,
+        0 0 30px #00ff66,
+        0 0 50px #00ffcc;
+    box-shadow: 
+        0 0 30px #00ff99,
+        0 0 60px #00ffe0,
+        0 0 90px #00ff66;
     animation: blink 1s infinite alternate;
     transition: all 0.3s ease-in-out;
 }
 
-/* Efeito hover */
+/* Hover aumenta o efeito neon */
 #clock:hover {
-    box-shadow: 0 0 50px #00ff00, 0 0 100px #00ff7f, 0 0 150px #00ff7f;
+    box-shadow: 
+        0 0 50px #00ff99,
+        0 0 100px #00ffe0,
+        0 0 150px #00ff66;
 }
 
 /* Piscar suave estilo LED */
